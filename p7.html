@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="p7.css">
+    <script src="p7.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature Converter</h2>
+        <div class="form-group">
+            <label for="temperature">Temperature:</label>
+            <input type="text" id="temperature" placeholder="Enter temperature">
+        </div>
+        <div class="form-group">
+            <label for="conversionType">Convert To:</label>
+            <select id="conversionType">
+                <option value="cToF">Celsius to Fahrenheit</option>
+                <option value="fToC">Fahrenheit to Celsius</option>
+            </select>
+        </div>
+        <button onclick="convertTemperature()">Convert</button>
+        <div class="result" id="result"></div>
+    </div>
+</body>
+</html>
